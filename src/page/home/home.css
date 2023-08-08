@@ -1,7 +1,7 @@
 .header {
   display: flex;
   height: 60px;
-  background-color: rgba(35, 47, 62, 255);
+  background-color: black;
 }
 .hello {
   font-size: 12px;
@@ -13,4 +13,92 @@
   font-size: 14px;
   line-height: 15px;
   font-weight: 700;
+}
+.arrow {
+  font-size: 10px;
+}
+.all {
+  background-color: #f3f3f3;
+  color: black;
+  height: 100%;
+  padding: 0 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.left {
+  position: fixed;
+  right: 20px;
+}
+.search {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+.width {
+  width: 58%;
+  height: 100%;
+}
+.mag {
+  width: 50px;
+  background-color: #febd69;
+  color: black;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+input:focus-visible {
+  outline-offset: none !important;
+  outline: none !important;
+}
+
+.width:focus-visible {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.am:hover {
+  outline: #f3f3f3 2px solid;
+  height: 100%;
+}
+.ad:hover {
+  outline: #f3f3f3 2px solid;
+  height: 100%;
+}
+.en:hover {
+  outline: #f3f3f3 2px solid;
+  height: 100%;
+}
+.ac:hover {
+  outline: #f3f3f3 2px solid;
+  height: 100%;
+}
+.order:hover {
+  outline: #f3f3f3 2px solid;
+  height: 100%;
+}
+.ca:hover {
+  outline: #f3f3f3 2px solid;
+  height: 100%;
+}
+.cart {
+  color: orange;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: 12px;
+}
+.catlist {
+  background-color: #232f3e;
+  display: flex;
+  color: white;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  height: 400px !important;
+}
+.carousel-control-prev-icon {
+  background-color: #232f3e;
+}
+.carousel-control-next-icon {
+  background-color: #232f3e;
 }
