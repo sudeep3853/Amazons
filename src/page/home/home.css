@@ -102,3 +102,24 @@ input:focus-visible {
 .carousel-control-next-icon {
   background-color: #232f3e;
 }
+
+.object {
+  background-color: #ffff;
+  padding: 20px;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Two columns of equal width */
+  gap: 20px; /* Gap between grid items */
+  margin-top: -350px;
+  z-index: 1;
+  position: relative;
+  padding: 0px 35px;
+}
+.fs-12{
+  font-size: 12px;
+}
+.fs-14{
+  font-size: 14px;
+}

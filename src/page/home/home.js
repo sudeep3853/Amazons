@@ -113,44 +113,91 @@ function Home() {
       </div>
       {/* nav */}
       {/* banner */}
-         
 
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./images/home1.jpg" class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="./images/home2.jpg" class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="./images/home3.jpg" class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="./images/home4.jpg" class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="./images/home5.jpg" class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="./images/home6.jpg" class="d-block w-100" alt="..."/>
-    </div>
-    <div class="carousel-item">
-      <img src="./images/home7.jpg" class="d-block w-100" alt="..."/>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-
-
+      <div
+        id="carouselExampleControls"
+        class="carousel slide px-3"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/home1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home3.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home4.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home5.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home6.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home7.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div>
+        <div className="grid-container ">
+          <div className="object">
+            <div className=" fw-bold fs-5 mb-2">Up to 60% off | Styles for men</div>
+            <div>
+              <div className=" d-flex">
+                <div className=" pe-2">
+                  <img src="./images/cat1.jpg" />
+                  <div className="fs-12">Clothing</div>
+                </div>
+                <div className=" ps-2">
+                  <img src="./images/cat2.jpg" />
+                  <div className="fs-12">Footwear</div>
+                </div>
+              </div>
+              <div className=" d-flex mt-3">
+                <div className=" pe-2">
+                  <img src="./images/cat3.jpg" />
+                  <div className="fs-12">Watches</div>
+                </div>
+                <div className=" ps-2">
+                  <img src="./images/cat4.jpg" />
+                  <div className="fs-12">Bags & luggage</div>
+                </div>
+              </div>
+              <div className=" mt-3 d-flex justify-content-start text-primary fs-14">See all offers</div>
+            </div>
+          </div>
+          <div className="object"></div>
+          <div className="object"></div>
+          <div className="object"></div>
+          <div className="object"></div>
+          <div className="object"></div>
+          <div className="object"></div>
+          <div className="object"></div>
+        </div>
+      </div>
     </div>
   );
 }
