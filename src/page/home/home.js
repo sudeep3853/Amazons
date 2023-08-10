@@ -1,3 +1,4 @@
+import { cat } from "../../data/catagarious";
 import "./home.css";
 function Home() {
   return (
@@ -121,25 +122,44 @@ function Home() {
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./images/home1.jpg" class="d-block w-100" alt="..." />
+            <div class="image-container">
+              <img src="./images/home1.jpg" class="d-block w-100" alt="..." />
+              <div class="gradient-overlay"></div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/home2.jpg" class="d-block w-100" alt="..." />
+            <div class="image-container">
+              <img src="./images/home2.jpg" class="d-block w-100" alt="..." />
+              <div class="gradient-overlay"></div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/home3.jpg" class="d-block w-100" alt="..." />
+            <div class="image-container">
+              <img src="./images/home3.jpg" class="d-block w-100" alt="..." />
+              <div class="gradient-overlay"></div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/home4.jpg" class="d-block w-100" alt="..." />
+            <div class="image-container">
+              <img src="./images/home4.jpg" class="d-block w-100" alt="..." />
+              <div class="gradient-overlay"></div>
+            </div>
           </div>
           <div class="carousel-item">
             <img src="./images/home5.jpg" class="d-block w-100" alt="..." />
+            <div class="gradient-overlay"></div>
           </div>
           <div class="carousel-item">
-            <img src="./images/home6.jpg" class="d-block w-100" alt="..." />
+            <div class="image-container">
+              <img src="./images/home6.jpg" class="d-block w-100" alt="..." />
+              <div class="gradient-overlay"></div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/home7.jpg" class="d-block w-100" alt="..." />
+            <div class="image-container">
+              <img src="./images/home7.jpg" class="d-block w-100" alt="..." />
+              <div class="gradient-overlay"></div>
+            </div>
           </div>
         </div>
         <button
@@ -163,39 +183,56 @@ function Home() {
       </div>
       <div>
         <div className="grid-container ">
-          <div className="object">
-            <div className=" fw-bold fs-5 mb-2">Up to 60% off | Styles for men</div>
+          {cat.map((ite) => (
             <div>
-              <div className=" d-flex">
-                <div className=" pe-2">
-                  <img src="./images/cat1.jpg" />
-                  <div className="fs-12">Clothing</div>
+              {ite.mult == 1 ? (
+                <div className="object">
+                  <div className=" fw-bold fs-5 mb-2">{ite.tittle}</div>
+                  <div>
+                    <div className=" d-flex">
+                      <div className=" ">
+                        <img className="s" src={ite.images} />
+                      </div>
+                    </div>
+                    <div className=" mt-3 d-flex justify-content-start text-primary fs-14">
+                      {ite.nav}
+                    </div>
+                  </div>
                 </div>
-                <div className=" ps-2">
-                  <img src="./images/cat2.jpg" />
-                  <div className="fs-12">Footwear</div>
+              ) : (
+                <div className="object ">
+                  <div className=" fw-bold fs-5 mb-2">{ite.tittle}</div>
+                  <div>
+                    <div className="   gridmm">
+                      {ite.images.map((ite) => (
+                        <div className="  pe-2">
+                          <img className="op" src={ite.images} />
+                          <div className="fs-12">{ite.subtittle} </div>
+                        </div>
+                      ))}
+                      {/* <div className=" ps-2">
+                        <img className="op" src="./images/cat2.jpg" />
+                        <div className="fs-12">Footwear</div>
+                      </div> */}
+                    </div>
+                    {/* <div className=" d-flex mt-3">
+                      <div className=" pe-2">
+                        <img className="op" src="./images/cat3.jpg" />
+                        <div className="fs-12">Watches</div>
+                      </div>
+                      <div className=" ps-2">
+                        <img className="op" src="./images/cat4.jpg" />
+                        <div className="fs-12">Bags & luggage</div>
+                      </div>
+                    </div> */}
+                    <div className=" mt-3 d-flex justify-content-start text-primary fs-14">
+                      See all offers
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className=" d-flex mt-3">
-                <div className=" pe-2">
-                  <img src="./images/cat3.jpg" />
-                  <div className="fs-12">Watches</div>
-                </div>
-                <div className=" ps-2">
-                  <img src="./images/cat4.jpg" />
-                  <div className="fs-12">Bags & luggage</div>
-                </div>
-              </div>
-              <div className=" mt-3 d-flex justify-content-start text-primary fs-14">See all offers</div>
+              )}
             </div>
-          </div>
-          <div className="object"></div>
-          <div className="object"></div>
-          <div className="object"></div>
-          <div className="object"></div>
-          <div className="object"></div>
-          <div className="object"></div>
-          <div className="object"></div>
+          ))}
         </div>
       </div>
     </div>
